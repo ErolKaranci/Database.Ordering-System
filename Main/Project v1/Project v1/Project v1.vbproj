@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F6E609E-51A8-4650-ADFE-2F77A74C1E33}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Project_v1.My.MyApplication</StartupObject>
+    <RootNamespace>Project_v1</RootNamespace>
+    <AssemblyName>Project v1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Project v1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Project v1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Checkout.Designer.vb">
+      <DependentUpon>Checkout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Checkout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerSummary.Designer.vb">
+      <DependentUpon>CustomerSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabasesFP1DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabasesFP1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DEntertainment.Designer.vb">
+      <DependentUpon>DEntertainment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DEntertainment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMillitary.Designer.vb">
+      <DependentUpon>DMillitary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMillitary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntertainmentBotParts.Designer.vb">
+      <DependentUpon>EntertainmentBotParts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EntertainmentBotParts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntertainmentSummary.Designer.vb">
+      <DependentUpon>EntertainmentSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EntertainmentSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DHousehold.Designer.vb">
+      <DependentUpon>DHousehold.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DHousehold.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HouseHoldRobotA.Designer.vb">
+      <DependentUpon>HouseHoldRobotA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HouseHoldRobotA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HouseHoldRobotB.Designer.vb">
+      <DependentUpon>HouseHoldRobotB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HouseHoldRobotB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HouseholdSummary.Designer.vb">
+      <DependentUpon>HouseholdSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HouseholdSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home Page.Designer.vb">
+      <DependentUpon>Home Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerSummary.Designer.vb">
+      <DependentUpon>ManagerSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MillitaryRobot.Designer.vb">
+      <DependentUpon>MillitaryRobot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MillitaryRobot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MillitarySummary.Designer.vb">
+      <DependentUpon>MillitarySummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MillitarySummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Schematics.Designer.vb">
+      <DependentUpon>Schematics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Schematics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Checkout.resx">
+      <DependentUpon>Checkout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerSummary.resx">
+      <DependentUpon>CustomerSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEntertainment.resx">
+      <DependentUpon>DEntertainment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMillitary.resx">
+      <DependentUpon>DMillitary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntertainmentBotParts.resx">
+      <DependentUpon>EntertainmentBotParts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntertainmentSummary.resx">
+      <DependentUpon>EntertainmentSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DHousehold.resx">
+      <DependentUpon>DHousehold.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home Page.resx">
+      <DependentUpon>Home Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HouseHoldRobotA.resx">
+      <DependentUpon>HouseHoldRobotA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HouseHoldRobotB.resx">
+      <DependentUpon>HouseHoldRobotB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HouseholdSummary.resx">
+      <DependentUpon>HouseholdSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerSummary.resx">
+      <DependentUpon>ManagerSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MillitaryRobot.resx">
+      <DependentUpon>MillitaryRobot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MillitarySummary.resx">
+      <DependentUpon>MillitarySummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schematics.resx">
+      <DependentUpon>Schematics.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DatabasesFP1DataSet.xsc">
+      <DependentUpon>DatabasesFP1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabasesFP1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabasesFP1DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabasesFP1DataSet.xss">
+      <DependentUpon>DatabasesFP1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DatabasesFP1.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
